@@ -10,10 +10,6 @@ app
   .use(bodyParser.urlencoded({ extended: true }))
   .use(routes)
 
-  .get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
   .listen(port, () => {
   console.log(`Server is listening on port ${port}`)
 })
